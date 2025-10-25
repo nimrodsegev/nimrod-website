@@ -1,65 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Athletes and Their Quotes</title>
-    <link href="/styles/main.css" rel="stylesheet" />
-  </head>
-  <body>
-    <header role="banner">
-      <h1>Inspiration from the World's Greatest Athletes</h1>
-    </header>
-    <a href="star.html" class="corner-star">
-      <img src="star.png" alt="Star of David" />
-    </a>
-    <main>
-      <p class="intro-text">
-        Hover over each athlete to reveal a quote that inspired millions.<br>
-        Get ready to be inspired.
-      </p>
-      <div class="athlete-gallery">
-        <div class="athlete-card">
-          <img src="/public/athlete1.jpeg" alt="Michael Jordan" />
-          <div class="quote">"I've failed over and over again in my life. And that is why I succeed."</div>
-        </div>
-      
-        <div class="athlete-card">
-          <img src="/public/athlete2.jpeg" alt="Alon Mizrahi" />
-          <div class="quote">"I didn’t run to chase the ball - the ball came to me. That’s instinct."</div>
-        </div>
-      
-        <div class="athlete-card">
-          <img src="/public/athlete3.jpeg" alt="Tal Brody" />
-          <div class="quote">"We are on the map - and we are staying on the map. Not only in sports, but in everything."</div>
-        </div>
-      
-        <div class="athlete-card">
-          <img src="/public/athlete4.jpeg" alt="Zlatan Ibrahimović" />
-          <div class="quote">"Lions don’t compare themselves to humans."</div>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Athletes and Their Quotes</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.png" />
+  <link href="/styles/main.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Page Header -->
+  <header role="banner">
+    <h1>Inspiration from the World's Greatest Athletes</h1>
+  </header>
+
+  <!-- Star of David Link -->
+  <a href="star.html" class="corner-star">
+    <img src="star.png" alt="Star of David" />
+  </a>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Intro Text -->
+    <p class="intro-text">
+      Hover over each athlete to reveal a quote that inspired millions.<br>
+      Get ready to be inspired.
+    </p>
+
+    <!-- Athlete Gallery -->
+    <div class="athlete-gallery">
+      <div class="athlete-card">
+        <img src="/public/athlete1.jpeg" alt="Michael Jordan" />
+        <div class="quote">"I've failed over and over again in my life. And that is why I succeed."</div>
       </div>
-      <section class="cta">
-        <p>Need more motivation?</p>
-        <button id="showQuoteBtn">Click for a surprise quote</button>
-      </section>      
-      <p id="highlightText" class="hidden-quote">
-        “You miss 100% of the shots you don’t take.” – Wayne Gretzky
-      </p>
-      
-      <button id="toggleBtn">Reveal me</button>
-    </main>
-    <script type="module" src="/main.js"></script>
-    <footer>
-      <p>
-        For more inspiring quotes,
-        <a href="https://sportstrata.com/quotes/" target="_blank">click here please!</a>.
-      </p>
-    </footer>
-    <div id="quoteBox" class="quote-box">
-      “Hard work beats talent when talent doesn’t work hard.” – Tim Notke
+
+      <div class="athlete-card">
+        <img src="/public/athlete2.jpeg" alt="Alon Mizrahi" />
+        <div class="quote">"I didn’t run to chase the ball - the ball came to me. That’s instinct."</div>
+      </div>
+
+      <div class="athlete-card">
+        <img src="/public/athlete3.jpeg" alt="Tal Brody" />
+        <div class="quote">"We are on the map - and we are staying on the map. Not only in sports, but in everything."</div>
+      </div>
+
+      <div class="athlete-card">
+        <img src="/public/athlete4.jpeg" alt="Zlatan Ibrahimović" />
+        <div class="quote">"Lions don’t compare themselves to humans."</div>
+      </div>
     </div>
-    
-  </body>
+
+    <!-- Call to Action -->
+    <section class="cta">
+      <p>Need more motivation?</p>
+      <button id="showQuoteBtn">Click for a surprise quote</button>
+    </section>
+
+    <!-- Hidden Quote with Toggle -->
+    <p id="highlightText" class="hidden-quote">
+      “You miss 100% of the shots you don’t take.” – Wayne Gretzky
+    </p>
+    <button id="toggleBtn">Reveal me</button>
+  </main>
+
+  <!-- Quote Popup Box -->
+  <div id="quoteBox" class="quote-box">
+    “Hard work beats talent when talent doesn’t work hard.” – Tim Notke
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>
+      For more inspiring quotes,
+      <a href="https://sportstrata.com/quotes/" target="_blank">click here please!</a>.
+    </p>
+  </footer>
+
+  <!-- JS Script -->
+  <script type="module" src="/main.js"></script>
+</body>
 </html>
