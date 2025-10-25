@@ -1,19 +1,15 @@
-console.log("Hello World!");
-setupCounter();
+document.getElementById("showQuoteBtn").addEventListener("click", () => {
+  const quoteBox = document.getElementById("quoteBox");
+  quoteBox.classList.add("show");
 
-function setupCounter() {
-  let count = 0;
+  // Automatically hide after 3 seconds
+  setTimeout(() => {
+    quoteBox.classList.remove("show");
+  }, 3000);
+});
+const toggleBtn = document.getElementById("toggleBtn");
+const highlightText = document.getElementById("highlightText");
 
-  function increment() {
-    count++;
-    document.querySelector("#count").innerHTML = count;
-  }
-
-  function decrement() {
-    count--;
-    document.querySelector("#count").innerHTML = count;
-  }
-
-  document.querySelector("#increment").addEventListener("click", increment);
-  document.querySelector("#decrement").addEventListener("click", decrement);
-}
+toggleBtn.addEventListener("click", () => {
+  highlightText.classList.toggle("highlight");
+});
